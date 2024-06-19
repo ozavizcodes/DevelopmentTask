@@ -54,6 +54,7 @@
 .display-txt {
   color: rgb(255, 255, 245);
   font-family: poppins;
+  font-size: 18px;
 }
 
 .prime-list {
@@ -74,12 +75,18 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+footer {
+  font-style: italic;
+  color: beige;
+  font-size: 12px;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
+
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;

@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPlay } from '@fortawesome/free-solid-svg-icons';
 
 //prime numbers are 2,3 5, 7, 11,13,17...
 const isPrimeNum = (num) => {
@@ -41,10 +43,13 @@ const MyComponent = () => {
 
     return (
         <div className="container">
-            <div className="">
-                <h1 className="header">Hello, welcome to PrimeNumbersGenerator!</h1>
+            <header className="header">
+                <h2>Hello, welcome to PrimeNumbersGenerator!</h2>
+            </header>
+            <div className="content">
+
                 <p className="display-txt">Generate and display prime numbers as you go..</p>
-                <button className="btn-add-more" onClick={handleRun}>Run</button>
+                <button className="btn-add-more" onClick={handleRun}> <FontAwesomeIcon icon={faPlay} /> Run</button>
             </div>
             <div className="prime-list">
                 {primes.map((prime, index) => (
@@ -53,6 +58,9 @@ const MyComponent = () => {
                     </div>
                 ))}
             </div>
+            <footer className="footer">
+                <p>Prime Number Generator by ozaviz</p>
+            </footer>
 
         </div>
     )
